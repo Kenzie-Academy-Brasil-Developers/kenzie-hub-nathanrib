@@ -1,18 +1,20 @@
 import { useForm } from "react-hook-form"
 import { Input } from "../Input/Input"
 import { yupResolver } from "@hookform/resolvers/yup"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { RegisterSchema } from "./RegisterSchema"
 import { StyleRegisterForm } from "./style"
 import { ButtonConfirm } from "../ButtonConfirm/ButtonConfirm"
+import { UserContext } from "../../contexts/UserContext"
 
-export const RegisterForm = ({ registerRequest }) => {
+export const RegisterForm = () => {
 
 
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(RegisterSchema)
     })
 
+    const { registerRequest } = useContext(UserContext)
     const [loading, setLoading] = useState()
 
 

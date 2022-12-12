@@ -2,11 +2,11 @@
 import { LoginForm } from "../../components/LoginForm/LoginForm"
 import { StyleLoginPage } from "./style"
 
-export const LoginPage = ({ loginRequest }) => {
+export const LoginPage = () => {
     return (
         <StyleLoginPage>
             <h2>Kenzie Hub</h2>
-            <LoginForm loginRequest={loginRequest} />
+            <LoginForm />
         </StyleLoginPage>
     )
 }

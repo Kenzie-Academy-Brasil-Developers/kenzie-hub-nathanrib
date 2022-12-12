@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { RegisterForm } from "../../components/RegisterForm/RegisterForm"
 import { StyleRegisterPage } from "./style"
 
-export const RegisterPage = ({ registerRequest }) => {
+export const RegisterPage = () => {
     return (
         <StyleRegisterPage>
             <div>
@@ -11,7 +11,7 @@ export const RegisterPage = ({ registerRequest }) => {
                     Voltar
                 </Link>
             </div>
-            <RegisterForm registerRequest={registerRequest} />
+            <RegisterForm />
 
         </StyleRegisterPage>
     )

@@ -12,10 +12,10 @@ align-items: center;
 > header{
     width: 100%;
     padding: 10px 280px;
-    margin: 25px;
+    margin-top: 20px;
+    margin-bottom: -12px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 0.5px solid #868E96;
 }
 > header > h2{ 
     color: #FF577F
@@ -28,20 +28,20 @@ header > button{
     border-radius: 4px;
 }
 
-> section {
+> section:first-of-type {
     width: 100%;
-    padding: 10px 280px;
-    margin: 25px;
+    padding: 65px 280px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 0.5px solid #868E96;
+    border-top: 0.2px solid #868E96;
+    border-bottom: 0.2px solid #868E96;
 }
 
- section > h3 {
+ section:first-of-type > h3 {
     color: #fff;
  }
 
- section > p {
+ section:first-of-type > p {
     color: #868E96;
     font-size: 12px;
     font-weight: 600;
